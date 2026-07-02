@@ -1,0 +1,114 @@
+@import "frappe.css";
+
+/* Base font settings */
+* {
+    font-family: FantasqueSansMono Nerd Font;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    color: @black;
+}
+
+/* Waybar container */
+window#waybar, #waybar {
+    min-height: 24px;        /* slightly taller than modules */
+    padding-top: 2px;        /* vertical padding inside bar */
+    padding-bottom: 2px;
+    margin: 0;
+    background-color: @black;
+    border: 0px solid alpha(@crust, 0.3);
+}
+
+/* Modules styling */
+#workspaces,
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#custom-power,
+#cpu,
+#memory,
+#custom-notification {
+    padding-top: 2px;        /* vertical padding ~ 20px total visually */
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 4px;           /* horizontal spacing */
+    background-color: @surface0;
+    border-radius: 1rem;
+}
+
+/* Workspaces buttons */
+#workspaces button {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 1rem;
+    color: @black;
+}
+
+#workspaces button.active {
+    color: @black;
+}
+
+#workspaces button:hover {
+    color: @black;
+}
+
+/* Clock */
+#clock {
+    color: @black;
+    border-radius: 1rem;
+}
+
+/* Battery */
+#battery {
+    color: @black;
+}
+
+#battery.charging {
+    color: @black;
+}
+
+#battery.warning:not(.charging) {
+    color: @black;
+}
+
+/* Backlight */
+#backlight {
+    color: @yellow;
+}
+
+/* Pulseaudio */
+#pulseaudio {
+    color: @black;
+}
+
+/* Music */
+#custom-music {
+    color: @black;
+}
+
+/* Lock & Power */
+#custom-lock {
+    border-radius: 1rem 0 0 1rem;
+    color: @lavender;
+}
+
+#custom-power {
+    border-radius: 0 1rem 1rem 0;
+    color: @black;
+}
+
+/* CPU & Memory */
+#cpu, #memory {
+    border-radius: 1rem;
+    color: @black;
+}
+
+/* Notifications */
+#custom-notification {
+    background-color: @surface0;
+}
